@@ -13,7 +13,8 @@ double dim2;
 
 public:
 
-Vecteur2D(double dim1b = 0.0, double dim2b = 0.0) : dim1(dim1b),  dim2(dim2b) {} // constructeur vecteur nul par defaut + par coord cathé
+Vecteur2D(double dim1b, double dim2b) : dim1b(0.0),  dim2b(0.0) {} // constructeur vecteur nul par defaut
+Vecteur2D(double dim1b, double dim2b) : dim1(dim1b),  dim2(dim2b) {} // constructeur par coord carthé
 
 void affiche() /*{cout <<dim1<<" "<<dim2<< endl;}*/; // opérateur affiche
 
@@ -46,7 +47,7 @@ Vecteur2D operator+(Vecteur2D autre) const;
 	Vecteur2D operator*(double x);
 
 // opé normesquare
-	double operator*=(double x);
+	double operator++(double x);
 
 // opé norme
 	double operator|| (double x);
