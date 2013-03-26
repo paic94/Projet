@@ -45,16 +45,14 @@ Vecteur2D Vecteur2D::operator-(Vecteur2D autres) const
 
 	return sous ;
 }
-//opé opposé
-Vecteur2D Vecteur2D::operator-=(Vecteur2D opp) const
+
+// Opposé d'un vecteur
+Vecteur2D Vecteur2D::operator~() 
 {
-
-	opp.dim1=-dim1;
-	opp.dim2=-dim2;
-
-	return opp;
-
+	return Vecteur2D(-1*dim1 , -1*dim2);
 }
+
+
 //opé prod par un scalaire
 Vecteur2D Vecteur2D::operator*(double x)
 {

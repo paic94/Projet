@@ -41,7 +41,7 @@ Vecteur2D operator+(Vecteur2D autre) const;
 	Vecteur2D operator-(Vecteur2D autres) const;
 
 // opé opposé
-	Vecteur2D operator-=(Vecteur2D opp);
+	Vecteur2D operator~();
 
 // opé prod par un scalaire
 	Vecteur2D operator*(double x);
