@@ -54,6 +54,7 @@ Vecteur2D operator+(Vecteur2D autre);
 
 //prod scalaire
 	double operator^ (Vecteur2D autrev);
+//-------------------------
 };
 
 

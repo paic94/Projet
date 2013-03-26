@@ -73,11 +73,11 @@ Vecteur2D Vecteur2D::operator*(double x)
 
 
 // opé prod scalaire
-Vecteur2D::operator^ (Vecteur2D autrev)
+double Vecteur2D::operator^ (Vecteur2D autrev)
 {
 	return (dim1*autrev.dim1+ dim2 * autrev.dim2);
 }
-};
+
 
 double Vecteur2D :: getDim1() const { return dim1; }
 double Vecteur2D :: getDim2() const { return dim2; }
