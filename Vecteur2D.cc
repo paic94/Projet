@@ -24,15 +24,9 @@ bool Vecteur2D::compare(Vecteur2D x)
 
 
 //opé addition
-Vecteur2D Vecteur2D::operator+(Vecteur2D autre) const
+Vecteur2D Vecteur2D::operator+(Vecteur2D autre)
 {
-
-	Vecteur2D somm;
-
-	somm.dim1=dim1+autre.dim1;
-	somm.dim2=dim2+autre.dim2;
-
-	return somm;
+	return Vecteur2D(dim1 + autre.dim1 , dim2 + autre.dim2);
 
 }
 //opé soustraction

@@ -13,7 +13,8 @@ double dim2;
 
 public:
 
-Vecteur2D(double dim1b, double dim2b) : dim1b(0.0),  dim2b(0.0) {} // constructeur vecteur nul par defaut
+
+Vecteur2D() : dim1(0.0),  dim2(0.0) {} // constructeur vecteur nul par defaut
 Vecteur2D(double dim1b, double dim2b) : dim1(dim1b),  dim2(dim2b) {} // constructeur par coord carthé
 
 void affiche() /*{cout <<dim1<<" "<<dim2<< endl;}*/; // opérateur affiche
@@ -35,7 +36,7 @@ void setDim2(double y);
    */
 
    //opé addition
-Vecteur2D operator+(Vecteur2D autre) const;
+Vecteur2D operator+(Vecteur2D autre);
 
 // opé soustraction
 	Vecteur2D operator-(Vecteur2D autres) const;
