@@ -8,7 +8,6 @@ void Vecteur2D::affiche()
 	cout <<dim1<<" "<<dim2<< endl;
 }
 
-
 bool Vecteur2D::compare(Vecteur2D x)
 {
 	if ((x.dim1==dim1) & (x.dim2==dim2))
@@ -44,8 +43,6 @@ double Vecteur2D::norme()
 	return sqrt(normeSquare());
 }
 
-
-
 //opé soustraction
 Vecteur2D Vecteur2D::operator-(Vecteur2D autres) const
 {
@@ -70,23 +67,10 @@ Vecteur2D Vecteur2D::operator*(double x)
 	Vecteur2D mult;
 	mult.dim1=dim1*x ;
 	mult.dim2=dim2*x;
-
 	return mult;
 
 }
-//Opé normesquareperator&()
-Vecteur2D::o
-{
-	return dim1*dim1+dim2*dim2;
-}
 
-//opé norme
-Vecteur2D::operator()
-{
-	x=sqrt(dim1*dim1+dim2*dim2);
-
-	return x;
-}
 
 // opé prod scalaire
 Vecteur2D::operator^ (Vecteur2D autrev)

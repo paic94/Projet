@@ -13,7 +13,6 @@ double dim2;
 
 public:
 
-
 Vecteur2D() : dim1(0.0),  dim2(0.0) {} // constructeur vecteur nul par defaut
 Vecteur2D(double dim1b, double dim2b) : dim1(dim1b),  dim2(dim2b) {} // constructeur par coord carthé
 
