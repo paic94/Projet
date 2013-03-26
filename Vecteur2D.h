@@ -28,15 +28,13 @@ double getDim2() const;
 void setDim1(double x);
 void setDim2(double y);
 
-	/* en gros eric, le concept est d'utiliser une methode qui va etre applée en tant que caractéristique d'un type d'objet
-   donc on va appeler la methode via la classe en prenant des arguments des objets externes: exemple pour
-   l'addition on a : A.addition(D) qui va faire l'addition entre le vecteur A et le vecteur D c'est pareil que de faire D.addition(A);
-   Si tu comprends pas reli ton cour !
-   Dans chaque methodes les vecteurs hotes de la methodes (vecteurs que on va retourner) sont només des facon logique ex: somm.....
-   */
 
-   //opé addition
+//------ADDITION------------------
+Vecteur2D somme(Vecteur2D autre);
 Vecteur2D operator+(Vecteur2D autre);
+//------------------------------------
+
+
 
 // opé soustraction
 	Vecteur2D operator-(Vecteur2D autres) const;
@@ -47,14 +45,16 @@ Vecteur2D operator+(Vecteur2D autre);
 // opé prod par un scalaire
 	Vecteur2D operator*(double x);
 
-// opé normesquare
-	double operator++(double x);
+// opé normesquare------------------
+	double normeSquare();
+//----------------------------------
 
-// opé norme
-	double operator|| (double x);
+// opé norme------------------------
+	double norme();
+//----------------------------------
 
 //prod scalaire
-	double operator->* (Vecteur2D autrev);
+	double operator^ (Vecteur2D autrev);
 };
 
 
