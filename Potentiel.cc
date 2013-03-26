@@ -6,13 +6,11 @@ using namespace std;
 
 class Potentiel
 {
-    Vecteur2D laplacien;
-    Vecteur2D potentiel;
+
 
     public :
 
-    Potentiel(double pas, int j , int k , double v) : potentiel((-(pas*k*v)/2),((pas*j*v)/2)) , laplacien(){} // constructeur
-    Potentiel() : laplacien() , potentiel(){} // constructeur
+
 
 
 
