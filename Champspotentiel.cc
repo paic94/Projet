@@ -1,12 +1,13 @@
 #include <iostream>
-#include "Vecteur2D.cc"
-#include "Montagne.cc"
-#include "Potentiel.cc"
+#include "Vecteur2D.h"
+#include "Montagne.h"
+#include "Potentiel.h"
+#include "Champspotentiel.h"
+
 using namespace std;
 
 
-class ChampPotentiel
-{
+
     int nbCubeX;
     int nbCubeY;
     int nbCubeZ;
@@ -191,14 +192,3 @@ array<double,3> ChampPotentiels::vitesse(int i, int j, int k)
 }
 
 
-};
-
-
-
-
-
-int main()
-{
-
-    return 0;
-}
