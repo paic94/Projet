@@ -1,5 +1,7 @@
 #ifndef PRJ_VECTEUR_H
 #define PRJ_VECTEUR_H
+
+
 #include <iostream>
 #include <cmath>
 
@@ -7,6 +9,8 @@
 using namespace std;
 
 class Vecteur2D  {
+
+
 private:
 double dim1;
 double dim2;

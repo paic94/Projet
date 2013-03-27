@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cmath>
 #include "Vecteur2D.h"
+
+
 using namespace std;
 
 void Vecteur2D::affiche()

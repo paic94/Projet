@@ -44,5 +44,8 @@
     <ClInclude Include="Vecteur2D.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Potentiel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
