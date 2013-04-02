@@ -7,6 +7,8 @@ using namespace std;
 
 	const double Mairsec(0.02896);
 	const double Gazparfait(8.3144621);
+	const double tauxhumid(0.008);
+	const double MMvapeau(0.0180153);
 	double TempsolINF;
 	//*température au sol
 	double pressairsolINF;
@@ -59,10 +61,13 @@ public:
 	
 	
 	}
-	//*demander a ludo le calcul suivant
+	
 	double CubedAir::presspartvapeau()
 	{
-	return(0);
+
+
+
+	return(pressairsol()*tauxhumid/(MMvapeau/ Mairsec + tauxhumid));
 	
 	
 	
