@@ -23,18 +23,18 @@ using namespace std;
 
     public :
 
-    string ChampPotentiel::get_string() const {return "nbCubeX" + nbCubeX + "nbCubeY" + nbCubeY + "nbCubeZ" + nbCubeZ }
-    double ChampPotentiels::get_coordonneeX () const {return coordonneeX;} // on se sert de ces methodes pour le calcul_laplacien
-    double ChampPotentiels::get_coordonneeY () const {return coordonneeY;}
-    double ChampPotentiels::get_coordonneeZ () const {return coordonneeZ;}
-    double ChampPotentiels::get_lambda () const {return lambda;}
-    void ChampPotentiels::set_coordonneeX (double X)  {coordonneeX = X;}
-    void ChampPotentiels::set_coordonneeY (double Y)  {coordonneeY = Y;}
-    void ChampPotentiels::set_coordonneeZ (double Z)  {coordonneeZ = Z;}
-    void ChampPotentiels::set_lambda (double l)  {lambda = l;}
+    string ChampPotentiel::get_string() const {return "nbCubeX : " + nbCubeX + " nbCubeY : " + nbCubeY + " nbCubeZ : " + nbCubeZ + " ; " + "coordonneeX : " + coordonneeX + "coordonneeY : " + coordonneeY + "coordonneeZ : " + coordonneeZ}
+    double ChampPotentiel::get_coordonneeX () const {return coordonneeX;} // on se sert de ces methodes pour le calcul_laplacien
+    double ChampPotentiel::get_coordonneeY () const {return coordonneeY;}
+    double ChampPotentiel::get_coordonneeZ () const {return coordonneeZ;}
+    double ChampPotentiel::get_lambda () const {return lambda;}
+    void ChampPotentiel::set_coordonneeX (double X)  {coordonneeX = X;}
+    void ChampPotentiel::set_coordonneeY (double Y)  {coordonneeY = Y;}
+    void ChampPotentiel::set_coordonneeZ (double Z)  {coordonneeZ = Z;}
+    void ChampPotentiel::set_lambda (double l)  {lambda = l;}
 
 
-    void ChampPotentiels::coordonnee (int BaseX, int BaseY, int BaseZ, double pas)
+    void ChampPotentiel::coordonnee (int BaseX, int BaseY, int BaseZ, double pas)
     {
         BaseX = nbCubeX;
         BaseY = nbCubeY;
@@ -44,7 +44,7 @@ using namespace std;
         coordonneeZ = BaseZ*pas;
 
     }
-    void ChampPotentiels::initialise(double v, Montagne M)
+    void ChampPotentiel::initialise(double v, Montagne M)
     {
 
         Vecteur2D p, lap;
@@ -73,7 +73,7 @@ using namespace std;
 
     }
 
- void ChampPotentiels::calcule_laplacien()
+ void ChampPotentiel::calcule_laplacien()
 {
    Vecteur2D lap, u;
     for (int i(1); i < nbCubeX-1; i++)
@@ -102,7 +102,7 @@ using namespace std;
                 }
             }
         }
-void ChampPotentiels::affiche(collectionPotentiel[][][]) {
+void ChampPotentiel::affiche(collectionPotentiel[][][]) {
 	for (int i(1); i <= nbCubeX; ++i) {
 		for ( int j(1); j<= nbCubeY; ++j) {
 			for (int k(1); k<= nbCubeZ ; ++k) {
@@ -119,7 +119,7 @@ void ChampPotentiels::affiche(collectionPotentiel[][][]) {
 		}
 }
 
-    double ChampPotentiels::erreur() const
+    double ChampPotentiel::erreur() const
     {
         double err(0);
          for (int i(1); i < nbCubeX; i++)
@@ -135,7 +135,7 @@ void ChampPotentiels::affiche(collectionPotentiel[][][]) {
         }
         return err;
     }
-    void ChampPotentiels::iteration(double epsilon)
+    void ChampPotentiel::iteration(double epsilon)
     {
         for (int i(1); i < nbCubeX-1; i++)
         {
@@ -153,7 +153,7 @@ void ChampPotentiels::affiche(collectionPotentiel[][][]) {
     }
 
 
-    void ChampPotentiels::resolution (double seuilErreur , int limiteIterations , bool verbeuse = false)
+    void ChampPotentiel::resolution (double seuilErreur , int limiteIterations , bool verbeuse = false)
     {
         if (verbeuse = true)
         {
@@ -182,7 +182,7 @@ void ChampPotentiels::affiche(collectionPotentiel[][][]) {
         }
     }
 
-array<double,3> ChampPotentiels::vitesse(int i, int j, int k)
+array<double,3> ChampPotentiel::vitesse(int i, int j, int k)
 {
     double Xi = 1/(2*lambda) * (collectionPotentiel[3/i][j+1][k].get_pot() - collectionPotentiel[3/i][j-1][k].get_pot()  -
                 collectionPotentiel[2/i][j][k+1].get_pot()  + collectionPotentiel[2/i][j][k+1].get_pot());
