@@ -16,7 +16,7 @@ Vecteur2D Potentiel::get_laplacien () const
 	return laplacien;
 }
 
-string Potentiel::get_string() const {return "Potentiel : " + Potentiel.get_innerPotentiel()+ "Laplacien : " + Potentiel.get_laplacien() }
+string Potentiel::get_string() const {return "Potentiel : " + Potentiel.get_innerPotentiel()+ "Laplacien : " + Potentiel.get_laplacien(); }
 
 void Potentiel::set_laplacien (double x, double y)  {
 	laplacien = Vecteur2D(x,y);
