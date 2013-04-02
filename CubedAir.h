@@ -15,28 +15,29 @@ private:
 	//*température au sol
 	double pressairsolINF;
 	//* pression de l'air au sol
-	double vitesse;
+	double vitesseINF;
+
 public:
-	double CubedAir::get_TempsolINF
-	double CubedAir::get_pressairsolINF
-	double CubedAir::get_vitesseINF
-	double CubedAir::set_TempsolINF
-	double CubedAir::set_pressairsolINF
-	double CubedAir::set_vitesseINF
+	double CubedAir::get_TempsolINF() const;
+	double CubedAir::get_pressairsolINF() const;
+	double CubedAir::get_vitesseINF() const;
+	double CubedAir::set_TempsolINF(double);
+	double CubedAir::set_pressairsolINF(double);
+	double CubedAir::set_vitesseINF(double);
 	
 	
-	double CubedAir::entalpieparmassINF() 
-	double CubedAir::constbernouilli()
+	double CubedAir::entalpieparmassINF();
+	double CubedAir::constbernouilli();
 	
 	//* INF veut dire a l'infinit à ne pas confondre avec l'entalpie par masse à un point précis
 
-	double CubedAir::entalpieparmass()
-	double CubedAir::Tempsol()
-	double CubedAir::pressairsol()
-	double CubedAir::presspartvapeau()
+	double CubedAir::entalpieparmass();
+	double CubedAir::Tempsol();
+	double CubedAir::pressairsol();
+	double CubedAir::presspartvapeau();
 	//*pression partielle de la vapeur d'eau
-	double CubedAir::pressvapeausaturante()
-	bool   CubedAir:: muageoupas()
+	double CubedAir::pressvapeausaturante();
+	bool   CubedAir:: muageoupas();
 
 
 
