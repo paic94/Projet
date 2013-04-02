@@ -7,7 +7,7 @@
 using namespace std;
 
 
-class ChampPotentiel
+class ChampPotentiel : public Dessinable
 {
     private :
     int nbCubeX;
@@ -43,6 +43,7 @@ class ChampPotentiel
     void ChampPotentiels::iteration(double epsilon)
     void ChampPotentiels::resolution (double seuilErreur , int limiteIterations , bool verbeuse = false)
     array<double,3> ChampPotentiels::vitesse(int i, int j, int k)
+    string ChampPotentiel::get_string() const
 };
 
 

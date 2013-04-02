@@ -23,6 +23,7 @@ using namespace std;
 
     public :
 
+    string ChampPotentiel::get_string() const {return "nbCubeX" + nbCubeX + "nbCubeY" + nbCubeY + "nbCubeZ" + nbCubeZ }
     double ChampPotentiels::get_coordonneeX () const {return coordonneeX;} // on se sert de ces methodes pour le calcul_laplacien
     double ChampPotentiels::get_coordonneeY () const {return coordonneeY;}
     double ChampPotentiels::get_coordonneeZ () const {return coordonneeZ;}
