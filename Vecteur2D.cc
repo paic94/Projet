@@ -22,6 +22,8 @@ bool Vecteur2D::compare(Vecteur2D x)
 		cout <<"false"<<endl; return (false);
 	}
 } // opérateur compare
+string Potentiel::get_string() const {return "dim1" + dim1 + "dim2" + dim2;}
+
 
 
 Vecteur2D Vecteur2D::somme(Vecteur2D autre)
@@ -57,7 +59,7 @@ Vecteur2D Vecteur2D::operator-(Vecteur2D autres) const
 }
 
 // Opposé d'un vecteur
-Vecteur2D Vecteur2D::operator~() 
+Vecteur2D Vecteur2D::operator~()
 {
 	return Vecteur2D(-1*dim1 , -1*dim2);
 }
