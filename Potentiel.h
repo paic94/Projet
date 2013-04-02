@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class Potentiel
+class Potentiel : public Dessinable
 {
     private :
 
