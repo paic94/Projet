@@ -17,11 +17,12 @@ class Potentiel : public Dessinable
         Potentiel(double pas, int j , int k , double v) : innerPotentiel((-(pas*k*v)/2),((pas*j*v)/2)) , laplacien(){} // constructeur
         Potentiel() : laplacien() , innerPotentiel(){} // constructeur
 
+
         Vecteur2D Potentiel::get_innerPotentiel () const ;// on se sert de ces methodes pour le calcul_laplacien
         Vecteur2D Potentiel::get_laplacien () const ;
         void Potentiel::set_laplacien (double x, double y)  ;
         void Potentiel::set_potentiel (Vecteur2D laplacien, Vecteur2D potentiel);
-
+        string Potentiel::get_string() const {}
 };
 
 
