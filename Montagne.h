@@ -4,7 +4,7 @@ class Montagne : public Dessinable{
 private :
 
 double x0, y0, h, x, y;
-string get_string() const {}
+
 
 public :
 
@@ -17,7 +17,7 @@ double getX() const;
 double getX0() const;
 double getY0() const;
 double altitude(const double&, const double&);
-
+string get_string() const
 
 
 
