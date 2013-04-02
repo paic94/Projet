@@ -18,7 +18,7 @@ public:
 	double CubedAir::get_vitesseINF const {return vitesseINF;}
 	double CubedAir::set_TempsolINF (double X)  {TempsolINF = X;}
 	double CubedAir::set_pressairsolINF(double Y) {pressairsolINF = Y}
-	double CubedAir::set_vitesseINF(double Z) { vitesseINF = Z  }
+	double CubedAir::set_vitesseINF(double Z) { vitesseINF = Z }
 	
 	
 	double CubedAir::entalpieparmassINF() 
@@ -38,7 +38,7 @@ public:
 	double CubedAir::entalpieparmass()
 	{
 	
-	return( 
+	return();
 
 	}
 	
@@ -46,16 +46,43 @@ public:
 	double CubedAir::Tempsol()
 	{
 	
-	return ((2.0/7.0)*)
+	return ((2.0/7.0)*Mairsec/Gazparfait*entalpieparmass());
+	
+	
+	}
+
+
+    double CubedAir::pressairsol()
+	{
+	return(pressairsolINF*pow(TempsolINF,(-7.0/2.0)*pow(Tempsol(),7.0/2.0)));
+	
+	
+	
+	}
+	//*demander a ludo le calcul suivant
+	double CubedAir::presspartvapeau()
+	{
+	return(0);
+	
 	
 	
 	}
 	
 	
-	
+	double CubedAir::pressvapeausaturante()
+	{
+	 
+		return (presspartvapeau()*exp(13.96-5208/Tempsol()));
 	
 	}
-	double CubedAir::constbernouilli(entalpieparmassINF())
+	
+	bool   CubedAir:: muageoupas()
+	{
+		if (pressvapeausaturante()<presspartvapeau()){return(true);}
+		else return (false);
+	
+	}
+	
 
 
 

@@ -31,7 +31,7 @@ public:
 	//* INF veut dire a l'infinit à ne pas confondre avec l'entalpie par masse à un point précis
 
 	double CubedAir::entalpieparmass()
-	double CubedAir::Tempsol(entalpieparmass()
+	double CubedAir::Tempsol()
 	double CubedAir::pressairsol()
 	double CubedAir::presspartvapeau()
 	//*pression partielle de la vapeur d'eau
