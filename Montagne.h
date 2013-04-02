@@ -4,7 +4,7 @@ class Montagne : public Dessinable{
 private :
 
 double x0, y0, h, x, y;
-void dessine() const {}
+string get_string() const {}
 
 public :
 

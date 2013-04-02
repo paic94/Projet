@@ -5,10 +5,14 @@
 using namespace std;
 
 
-class Dessinable
+abstract class Dessinable
 {
         public :
-        virtual void dessine () const {} // dessine est un virtuel
+
+        virtual string Dessinable::get_string(){};
+
+        void Dessinable::dessine () const {} // dessine est un virtuel pour la question 9.1
+        ostream& Dessinable::operator<<(ostream& out, Dessinable objetDessinable) {}
 };
 
 // endif // PRJ_DESSINABLE_H

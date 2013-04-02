@@ -2,10 +2,23 @@
 #include "Dessinable.h"
 using namespace std;
 
-virtual void Dessinable::dessine () const
+
+
+
+
+void Dessinable::dessine () const
 {
-    cout << 'A' << endl;
+    string aAfficher = get_string();
+    cout << aAfficher << endl;
 }
+
+ostream& Dessinable::operator<<(ostream& out, Dessinable objetDessinable)
+{
+    out << objetDessinable.get_string();
+    return out;
+}
+
+
 
 int main()
 {

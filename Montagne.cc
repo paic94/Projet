@@ -10,7 +10,7 @@ using namespace std;
 	double Montagne::getY() const {return y;}
 	double Montagne::getX0() const {return x0;}
 	double Montagne::getY0() const {return y0;}
-	void Montagne::dessine() const {cout << "h: "<< h << ", x: "<< x <<", y: " << y <<", x0: " << x0 <<", y0: " << y0 << endl;}
+	string Montagne::get_string() const {string attributs = "h: "<< h << ", x: "<< x <<", y: " << y <<", x0: " << x0 <<", y0: " << y0;}
 
 
 	/*void Montagne::setH(const double& h) {this->h = h;}
