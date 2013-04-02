@@ -7,7 +7,8 @@ using namespace std;
 
 class Dessinable
 {
-        virtual void dessine () const {}
+        public :
+        virtual void dessine () const {} // dessine est un virtuel
 };
 
 // endif // PRJ_DESSINABLE_H
