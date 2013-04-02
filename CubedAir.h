@@ -9,8 +9,8 @@ using namespace std;
 class CubedAir 
 {
 private:
-	const double Mairsec(0.02896)
-	const double Gazparfait(8.3144621)
+	const double Mairsec(0.02896);
+	const double Gazparfait(8.3144621);
 	double TempsolINF;
 	//*température au sol
 	double pressairsolINF;
@@ -26,17 +26,19 @@ public:
 	
 	
 	double CubedAir::entalpieparmassINF() 
-	double CubedAir::constbernouilli(entalpieparmassINF())
+	double CubedAir::constbernouilli()
 	
 	//* INF veut dire a l'infinit à ne pas confondre avec l'entalpie par masse à un point précis
 
-	double CubedAir::entalpieparmass(constbernouilli(entalpieparmassINF()))
-	double CubedAir::Tempsol(entalpieparmass(constbernouilli(entalpieparmassINF())))
-	double CubedAir::pressairsol(Tempsol(entalpieparmass(constbernouilli(entalpieparmassINF()))))
-	double CubedAir::presspartvapeau(pressairsol(Tempsol(entalpieparmass(constbernouilli(entalpieparmassINF())))))
+	double CubedAir::entalpieparmass()
+	double CubedAir::Tempsol(entalpieparmass()
+	double CubedAir::pressairsol()
+	double CubedAir::presspartvapeau()
 	//*pression partielle de la vapeur d'eau
-	double CubedAir::pressvapeausaturante(presspartvapeau(pressairsol(Tempsol(entalpieparmass(constbernouilli(entalpieparmassINF()))))))
-	bool   CubedAir:: muageoupas(pressvapeausaturante(presspartvapeau(pressairsol(Tempsol(entalpieparmass(constbernouilli(entalpieparmassINF())))))))
+	double CubedAir::pressvapeausaturante()
+	bool   CubedAir:: muageoupas()
+
+
 
 }
 

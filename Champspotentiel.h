@@ -1,4 +1,4 @@
-#ifndef PRJ_    CHAMPPOTENTIEL_H
+#ifndef PRJ_CHAMPPOTENTIEL_H
 #define PRJ_CHAMPPOTENTIEL_H
 #include <iostream>
 #include "Vecteur2D.cc"

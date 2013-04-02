@@ -75,11 +75,15 @@
     <ClCompile Include="Makefile.cc" />
     <ClCompile Include="Montagne.cc" />
     <ClCompile Include="Potentiel.cc" />
+    <ClCompile Include="CubedAir.cpp" />
     <ClCompile Include="TestMontagne.cc" />
     <ClCompile Include="testpotentiel.cpp" />
     <ClCompile Include="Vecteur2D.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Champspotentiel.h" />
+    <ClInclude Include="Ciel.h" />
+    <ClInclude Include="CubedAir.h" />
     <ClInclude Include="Montagne.h" />
     <ClInclude Include="Potentiel.h" />
     <ClInclude Include="Vecteur2D.h" />

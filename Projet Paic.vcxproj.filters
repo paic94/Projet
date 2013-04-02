@@ -36,6 +36,9 @@
     <ClCompile Include="Vecteur2D.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CubedAir.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Montagne.h">
@@ -45,6 +48,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Potentiel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ciel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Champspotentiel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CubedAir.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
