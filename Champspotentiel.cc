@@ -8,22 +8,7 @@ using namespace std;
 
 
 
-    int nbCubeX;
-    int nbCubeY;
-    int nbCubeZ;
 
-    vector <vector <vector <Potentiel>>> collectionPotentiel;
-
-
-    // Dimensions de la boite
-    double coordonneeX;
-    double coordonneeY;
-    double coordonneeZ;
-    double lambda; // pas
-
-    public :
-
-    string ChampPotentiel::get_string() const {return "nbCubeX : " + nbCubeX + " nbCubeY : " + nbCubeY + " nbCubeZ : " + nbCubeZ + " ; " + "coordonneeX : " + coordonneeX + "coordonneeY : " + coordonneeY + "coordonneeZ : " + coordonneeZ}
     double ChampPotentiel::get_coordonneeX () const {return coordonneeX;} // on se sert de ces methodes pour le calcul_laplacien
     double ChampPotentiel::get_coordonneeY () const {return coordonneeY;}
     double ChampPotentiel::get_coordonneeZ () const {return coordonneeZ;}

@@ -2,19 +2,9 @@
 #include "Dessinable.h"
 using namespace std;
 
-
-
-
-
-void Dessinable::dessine () const
+ostream& operator<<(ostream& out, Dessinable objetDessinable)
 {
-    string aAfficher = get_string();
-    cout << aAfficher << endl;
-}
-
-ostream& Dessinable::operator<<(ostream& out, Dessinable objetDessinable)
-{
-    out << objetDessinable.get_string();
+    out << Dessinable::dessine(out);
     return out;
 }
 

@@ -25,25 +25,25 @@ class ChampPotentiel : public Dessinable
 
     public :
 
-    double ChampPotentiel::get_coordonneeX () const  // on se sert de ces methodes pour le calcul_laplacien
-    double ChampPotentiel::get_coordonneeY () const
-    double ChampPotentiel::get_coordonneeZ () const
-    double ChampPotentiel::get_lambda () const
-    void ChampPotentiel::set_coordonneeX (double X)
-    void ChampPotentiel::set_coordonneeY (double Y)
-    void ChampPotentiel::set_coordonneeZ (double Z)
-    void ChampPotentiel::set_lambda (double l)
+    double get_coordonneeX () const;  // on se sert de ces methodes pour le calcul_laplacien
+    double get_coordonneeY () const;
+    double get_coordonneeZ () const;
+    double get_lambda () const;
+    void set_coordonneeX (double X);
+    void set_coordonneeY (double Y);
+    void set_coordonneeZ (double Z);
+    void set_lambda (double l);
 
 
-    void ChampPotentiel::coordonnee (int BaseX, int BaseY, int BaseZ, double pas)
-    void ChampPotentiel::initialise(double v, Montagne M)
-    void ChampPotentiel::calcule_laplacien()
-    void ChampPotentiel::affiche(collectionPotentiel[][][])
-	double ChampPotentiel::erreur() const
-    void ChampPotentiel::iteration(double epsilon)
-    void ChampPotentiel::resolution (double seuilErreur , int limiteIterations , bool verbeuse = false)
-    array<double,3> ChampPotentiel::vitesse(int i, int j, int k)
-    string ChampPotentiel:: get_string() const
+
+    void coordonnee (int BaseX, int BaseY, int BaseZ, double pas);
+    void initialise(double v, Montagne M);
+    void calcule_laplacien();
+    void affiche();
+	double erreur() const;
+    void iteration(double epsilon);
+    void resolution (double seuilErreur , int limiteIterations , bool verbeuse = false);
+    array<double,3> vitesse(int i, int j, int k);
 };
 
 

@@ -1,6 +1,7 @@
 #include <iostream>
 
-class Montagne : public Dessinable{
+class Montagne : public Dessinable
+{
 private :
 
 double x0, y0, h, x, y;
@@ -17,7 +18,7 @@ double getX() const;
 double getX0() const;
 double getY0() const;
 double altitude(const double&, const double&);
-string get_string() const
+void dessine() const;
 
 
 
