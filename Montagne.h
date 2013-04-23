@@ -18,7 +18,7 @@ double getX() const;
 double getX0() const;
 double getY0() const;
 double altitude(const double&, const double&);
-void dessine() const;
+void dessine(ostream& out) const;
 
 
 

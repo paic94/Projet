@@ -9,7 +9,7 @@ class Dessinable
 {
         public :
 
-        virtual void dessine () const = 0; // dessine est une virtuelle pure pour la question 9.1
+        virtual void dessine (ostream& out) const = 0; // dessine est une virtuelle pure pour la question 9.1
 
 };
 
