@@ -10,7 +10,7 @@ using namespace std;
 	double Montagne::getY() const {return y;}
 	double Montagne::getX0() const {return x0;}
 	double Montagne::getY0() const {return y0;}
-	void Montagne::dessine(ostream& out) const {out << "x0 : " << x0 << ", y0 : " << y0 << ", Hauteur : " << h << ", x : " << x << ", y : " << y;}
+	void Montagne::dessine(ostream& out) const {out << "x0 : " << x0 << ", y0 : " << y0 << ", Hauteur : " << h << ", x : " << x << ", y : " << y << endl;}
 
 
 	/*void Montagne::setH(const double& h) {this->h = h;}

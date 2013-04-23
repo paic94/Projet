@@ -22,7 +22,6 @@ class Potentiel : public Dessinable
         Vecteur2D Potentiel::get_laplacien () const ;
         void Potentiel::set_laplacien (double x, double y)  ;
         void Potentiel::set_potentiel (Vecteur2D laplacien, Vecteur2D potentiel);
-        string Potentiel::get_string() const
 };
 
 
