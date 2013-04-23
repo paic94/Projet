@@ -22,7 +22,6 @@ bool Vecteur2D::compare(Vecteur2D x)
 		cout <<"false"<<endl; return (false);
 	}
 } // opérateur compare
-string Vecteur2D::get_string() const {return "dim1" + dim1 + "dim2" + dim2;}
 
 
 
