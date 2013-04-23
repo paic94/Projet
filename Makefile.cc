@@ -30,6 +30,8 @@ CubedAir.o: CubedAir.cc CubedAir.h
 
 Dessinable.o: Dessinable.cc Dessinable.h
 
+Ciel.o: Ciel.cc Ciel.h
+
 
 
 
