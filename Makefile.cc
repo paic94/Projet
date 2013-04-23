@@ -25,3 +25,11 @@ Montagne.o: Montagne.cc Montagne.h
 Potentiel.o: Potentiel.cc Potentiel.h
 
 ChampPotentiel.o: ChampPotentiel.cc ChampPotentiel.h
+
+CubedAir.o: CubedAir.cc CubedAir.h
+
+Dessinable.o: Dessinable.cc Dessinable.h
+
+
+
+

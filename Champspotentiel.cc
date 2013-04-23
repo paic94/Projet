@@ -67,21 +67,21 @@ using namespace std;
             {
                 for (int k(1); k < nbCubeZ-1; k++)
                 {
-                    collectionPotentiel set_lapl(collectionPotentiel[i-1][j][k].get_pot().get_coordonneeX() +
-                                                 collectionPotentiel[i][j-1][k].get_pot().get_coordonneeX() +
-                                                 collectionPotentiel[i][j][k-1].get_pot().get_coordonneeX() +
-                                                 6*collectionPotentiel[i][j][k].get_pot().get_coordonneeX() +
-                                                 collectionPotentiel[i+1][j][k].get_pot().get_coordonneeX() +
-                                                 collectionPotentiel[i][j+1][k].get_pot().get_coordonneeX() +
-                                                 collectionPotentiel[i][j][k+1].get_pot().get_coordonneeX(),
+                    collectionPotentiel set_lapl(collectionPotentiel[i-1][j][k].get_innerPotentiel().get_coordonneeX() +
+                                                 collectionPotentiel[i][j-1][k].get_innerPotentiel().get_coordonneeX() +
+                                                 collectionPotentiel[i][j][k-1].get_innerPotentiel().get_coordonneeX() +
+                                                 6*collectionPotentiel[i][j][k].get_innerPotentiel().get_coordonneeX() +
+                                                 collectionPotentiel[i+1][j][k].get_innerPotentiel().get_coordonneeX() +
+                                                 collectionPotentiel[i][j+1][k].get_innerPotentiel().get_coordonneeX() +
+                                                 collectionPotentiel[i][j][k+1].get_innerPotentiel().get_coordonneeX(),
 
-                                                 collectionPotentiel[i-1][j][k].get_pot().get_coordonneeY() +
-                                                 collectionPotentiel[i][j-1][k].get_pot().get_coordonneeY() +
-                                                 collectionPotentiel[i][j][k-1].get_pot().get_coordonneeY() +
-                                                 6*collectionPotentiel[i][j][k].get_pot().get_coordonneeY() +
-                                                 collectionPotentiel[i+1][j][k].get_pot().get_coordonneeY() +
-                                                 collectionPotentiel[i][j+1][k].get_pot().get_coordonneeY() +
-                                                 collectionPotentiel[i][j][k+1].get_pot().get_coordonneeY() );
+                                                 collectionPotentiel[i-1][j][k].get_innerPotentiel().get_coordonneeY() +
+                                                 collectionPotentiel[i][j-1][k].get_innerPotentiel().get_coordonneeY() +
+                                                 collectionPotentiel[i][j][k-1].get_innerPotentiel().get_coordonneeY() +
+                                                 6*collectionPotentiel[i][j][k].get_innerPotentiel().get_coordonneeY() +
+                                                 collectionPotentiel[i+1][j][k].get_innerPotentiel().get_coordonneeY() +
+                                                 collectionPotentiel[i][j+1][k].get_innerPotentiel().get_coordonneeY() +
+                                                 collectionPotentiel[i][j][k+1].get_innerPotentiel().get_coordonneeY() );
                     }
 
                 }
@@ -92,10 +92,10 @@ void ChampPotentiel::affiche(collectionPotentiel[][][]) {
 		for ( int j(1); j<= nbCubeY; ++j) {
 			for (int k(1); k<= nbCubeZ ; ++k) {
 				cout << i << " " << j << " " << k << " "  << endl;
-				cout << "Potentiel : x :" << collectionPotentiel[i][j][k].get_pot().get_coordonneeX() << endl;
-				cout << "            y :" << collectionPotentiel[i][j][k].get_pot().get_coordonneeY() << endl;
-				cout << "Laplacien : x :" << collectionPotentiel[i][j][k].get_lapl().get_coordonneeX() << endl;
-				cout << "            y :" << collectionPotentiel[i][j][k].get_lapl().get_coordonneeY() << endl;
+				cout << "Potentiel : x :" << collectionPotentiel[i][j][k].get_innerPotentiel().get_coordonneeX() << endl;
+				cout << "            y :" << collectionPotentiel[i][j][k].get_innerPotentiel().get_coordonneeY() << endl;
+				cout << "Laplacien : x :" << collectionPotentiel[i][j][k].get_innerPotentiel().get_coordonneeX() << endl;
+				cout << "            y :" << collectionPotentiel[i][j][k].get_innerPotentiel().get_coordonneeY() << endl;
 
 
 				} ;
@@ -128,10 +128,10 @@ void ChampPotentiel::affiche(collectionPotentiel[][][]) {
             {
                 for (int k(1); k < nbCubeZ-1; k++)
                 {
-                    collectionPotentiel[i][j][k].set_pot(collectionPotentiel[i][j][k].get_pot().get_coordonneeX()+
-                                                         epsilon * collectionPotentiel[i][j][k].get_pot().getcoordonneeY,
-                                                         collectionPotentiel[i][j][k].get_pot().get_coordonneeY()+
-                                                         epsilon * collectionPotentiel[i][j][k].get_pot().get_coordonneeX  );
+                    collectionPotentiel[i][j][k].set_pot(collectionPotentiel[i][j][k].get_innerPotentiel().get_coordonneeX()+
+                                                         epsilon * collectionPotentiel[i][j][k].get_innerPotentiel().getcoordonneeY,
+                                                         collectionPotentiel[i][j][k].get_innerPotentiel().get_coordonneeY()+
+                                                         epsilon * collectionPotentiel[i][j][k].get_innerPotentiel().get_coordonneeX  );
                 }
             }
         }
@@ -169,10 +169,10 @@ void ChampPotentiel::affiche(collectionPotentiel[][][]) {
 
 array<double,3> ChampPotentiel::vitesse(int i, int j, int k)
 {
-    double Xi = 1/(2*lambda) * (collectionPotentiel[3/i][j+1][k].get_pot() - collectionPotentiel[3/i][j-1][k].get_pot()  -
-                collectionPotentiel[2/i][j][k+1].get_pot()  + collectionPotentiel[2/i][j][k+1].get_pot());
-    double Yj = 1/(2*lambda) * (collectionPotentiel[3/(i-1)][j][k].get_pot() - collectionPotentiel[3/(i+1)][j][k].get_pot())
-    double Zk = 1/(2*lambda) * (collectionPotentiel[2/(i+1)][j][k].get_pot() - collectionPotentiel[2/(i-1)][j][k].get_pot())
+    double Xi = 1/(2*lambda) * (collectionPotentiel[3/i][j+1][k].get_innerPotentiel() - collectionPotentiel[3/i][j-1][k].get_innerPotentiel()  -
+                collectionPotentiel[2/i][j][k+1].get_innerPotentiel()  + collectionPotentiel[2/i][j][k+1].get_innerPotentiel());
+    double Yj = 1/(2*lambda) * (collectionPotentiel[3/(i-1)][j][k].get_innerPotentiel() - collectionPotentiel[3/(i+1)][j][k].get_innerPotentiel())
+    double Zk = 1/(2*lambda) * (collectionPotentiel[2/(i+1)][j][k].get_innerPotentiel() - collectionPotentiel[2/(i-1)][j][k].get_innerPotentiel())
 
     return array[Xi, Yj, Zk];
 }
