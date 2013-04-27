@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include "CubedAir.h"
+
 using namespace std;
 
 	double CubedAir::get_TempsolINF() const {return TempsolINF;}
@@ -70,7 +71,7 @@ using namespace std;
 
 	}
 
-	bool   CubedAir:: muageoupas()
+	bool CubedAir:: nuageoupas()
 	{
 		if (pressvapeausaturante()<presspartvapeau()){return(true);}
 		else return (false);

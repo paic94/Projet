@@ -46,8 +46,9 @@ double Vecteur2D::norme()
 	return sqrt(normeSquare());
 }
 
+
 //opé soustraction
-Vecteur2D Vecteur2D::operator-(Vecteur2D autres) const
+Vecteur2D Vecteur2D::operator- (Vecteur2D autres) 
 {
 	Vecteur2D sous;
 
@@ -68,8 +69,8 @@ Vecteur2D Vecteur2D::operator~()
 Vecteur2D Vecteur2D::operator*(double x)
 {
 	Vecteur2D mult;
-	mult.dim1=dim1*x ;
-	mult.dim2=dim2*x;
+	mult.dim1 = dim1*x ;
+	mult.dim2 = dim2*x;
 	return mult;
 
 }

@@ -39,7 +39,8 @@ Vecteur2D operator+(Vecteur2D autre);
 
 
 // opé soustraction
-	Vecteur2D operator-(Vecteur2D autres) const;
+	 
+	Vecteur2D operator-(Vecteur2D autres);
 
 // opé opposé
 	Vecteur2D operator~();

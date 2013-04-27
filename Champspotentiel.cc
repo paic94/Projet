@@ -131,10 +131,10 @@ void ChampPotentiel::affiche() {
             {
                 for (int k(1); k < nbCubeZ-1; k++)
                 {
-                    collectionPotentiel[i][j][k].set_potentiel(collectionPotentiel[i][j][k].get_innerPotentiel().getDim1()+
-                                                         epsilon * collectionPotentiel[i][j][k].get_innerPotentiel().getDim2(),
-                                                         collectionPotentiel[i][j][k].get_innerPotentiel().getDim2()+
-                                                         epsilon * collectionPotentiel[i][j][k].get_innerPotentiel().getDim1());
+                    collectionPotentiel[i][j][k].set_potentiel(collectionPotentiel[i][j][k].get_innerPotentiel() +
+                                                         collectionPotentiel[i][j][k].get_innerPotentiel() * epsilon,
+                                                         collectionPotentiel[i][j][k].get_innerPotentiel()+
+                                                          collectionPotentiel[i][j][k].get_innerPotentiel() * epsilon );
                 }
             }
         }
@@ -162,7 +162,7 @@ void ChampPotentiel::affiche() {
         {
             do
             {
-				iteration(seuilErreur);
+				iteration();
               nbIteration++;
               affiche();
             }
