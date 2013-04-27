@@ -4,7 +4,7 @@ using namespace std;
 
 ostream& operator<<(ostream& out, Dessinable objetDessinable)
 {
-    out << Dessinable::dessine(out);
+    objetDessinable.dessine(out);
     return out;
 }
 

@@ -61,4 +61,4 @@ Vecteur2D operator+(Vecteur2D autre);
 };
 
 
-// #endif PRJ_VECTEUR_H
+#endif PRJ_VECTEUR_H

@@ -19,6 +19,7 @@ double getX0() const;
 double getY0() const;
 double altitude(const double&, const double&);
 void dessine(ostream& out) const;
+void controlevalue(double& a);
 
 
 

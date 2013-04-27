@@ -13,4 +13,4 @@ class Dessinable
 
 };
 
-// endif // PRJ_DESSINABLE_H
+#endif PRJ_DESSINABLE_H

@@ -1,4 +1,5 @@
 #include "Montagne.h"
+#include "Dessinable.h"
 #include <cmath>
 #include <fstream>
 

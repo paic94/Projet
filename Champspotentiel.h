@@ -1,18 +1,24 @@
 #ifndef PRJ_CHAMPPOTENTIEL_H
 #define PRJ_CHAMPPOTENTIEL_H
 #include <iostream>
-#include "Vecteur2D.cc"
-#include "Montagne.cc"
-#include "Potentiel.cc"
+#include<vector>
+#include<array>
+#include "Vecteur2D.h"
+#include "Montagne.h"
+#include "Potentiel.h"
+#include "Dessinable.h"
 using namespace std;
 
 
 class ChampPotentiel : public Dessinable
 {
     private :
+
     int nbCubeX;
     int nbCubeY;
     int nbCubeZ;
+	
+	
 
     vector <vector <vector <Potentiel>>> collectionPotentiel;
 
@@ -41,7 +47,7 @@ class ChampPotentiel : public Dessinable
     void calcule_laplacien();
     void affiche();
 	double erreur() const;
-    void iteration(double epsilon);
+    void iteration();
     void resolution (double seuilErreur , int limiteIterations , bool verbeuse = false);
     array<double,3> vitesse(int i, int j, int k);
 };
