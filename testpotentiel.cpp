@@ -1,15 +1,16 @@
 // ConsoleApplication3.cpp : définit le point d'entrée pour l'application console.
 //
 
-#include "montagne.cc"
-#include "ChampsPotentiel.cc"
+#include "Montagne.h"
+#include "Champspotentiel.h"
 
 int main()
 {
+	double a = 20/29;
 	Montagne M (15,15,0.4,15,15);
-	ChampsPotentiel P (30,30,30,20.0/29.0);
-	 P.initialise(15,M);
-    P.calcule_laplacien(M);
+	ChampPotentiel P(30,30,30,a);
+	P.initialise(15, M);
+    P.calcule_laplacien();
     P.affiche();
 
 	return 0;

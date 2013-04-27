@@ -1,7 +1,6 @@
-#include "CubedAir.h"
 #include <iostream>
 #include <cmath>
-
+#include "CubedAir.h"
 using namespace std;
 
 	double CubedAir::get_TempsolINF() const {return TempsolINF;}
@@ -16,7 +15,7 @@ using namespace std;
 	double CubedAir::entalpieparmassINF()
 	{
 	double h;
-	h=(7.0/2.0)*(Gazparfait / Mairsec)*TempsolINF;
+	h=(7.0/2.0)* Gazparfait / Mairsec*TempsolINF;
 	return h;
 	}
 

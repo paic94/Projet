@@ -9,8 +9,8 @@ using namespace std;
 class CubedAir
 {
 private:
-	const double Mairsec(0.02896);
-	const double Gazparfait(8.3144621);
+	 double Mairsec = 0.02896;
+	 double Gazparfait =8.3144621;
 	double TempsolINF;
 	//*température au sol
 	double pressairsolINF;
@@ -21,9 +21,9 @@ public:
 	double get_TempsolINF() const;
 	double get_pressairsolINF() const;
 	double get_vitesseINF() const;
-	double set_TempsolINF(double);
-	double set_pressairsolINF(double);
-	double set_vitesseINF(double);
+	void set_TempsolINF(double);
+	void set_pressairsolINF(double);
+	void set_vitesseINF(double);
 	void dessine(ostream& out);
 
 

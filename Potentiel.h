@@ -3,10 +3,11 @@
 #include <iostream>
 #include <cmath>
 #include "Vecteur2D.h"
+#include "Dessinable.h"
 
 using namespace std;
 
-class Potentiel : public Dessinable
+class Potentiel
 {
     private :
 

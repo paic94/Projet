@@ -1,4 +1,4 @@
-CXX = g++-4.7
+/*CXX = g++-4.7
 CC  = $(CXX)
 
 CXXFLAGS = -std=c++11  # C++11
@@ -31,7 +31,7 @@ CubedAir.o: CubedAir.cc CubedAir.h
 Dessinable.o: Dessinable.cc Dessinable.h
 
 Ciel.o: Ciel.cc Ciel.h
-
+*/
 
 
 

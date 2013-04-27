@@ -134,7 +134,7 @@ void ChampPotentiel::affiche() {
                     collectionPotentiel[i][j][k].set_potentiel(collectionPotentiel[i][j][k].get_innerPotentiel().getDim1()+
                                                          epsilon * collectionPotentiel[i][j][k].get_innerPotentiel().getDim2(),
                                                          collectionPotentiel[i][j][k].get_innerPotentiel().getDim2()+
-                                                         epsilon * collectionPotentiel[i][j][k].get_innerPotentiel().getDim1  );
+                                                         epsilon * collectionPotentiel[i][j][k].get_innerPotentiel().getDim1());
                 }
             }
         }
@@ -149,7 +149,7 @@ void ChampPotentiel::affiche() {
             
             do
             {
-              iteration(seuilErreur);
+              iteration();
               nbIteration = nbIteration + 1;
 
               cout << nbIteration << ". ";
@@ -178,7 +178,8 @@ array<double,3> ChampPotentiel::vitesse(int i, int j, int k)
     double Yj = 1/(2*lambda) * (collectionPotentiel[3/(i-1)][j][k].get_innerPotentiel().getDim2() - collectionPotentiel[3/(i+1)][j][k].get_innerPotentiel().getDim2());
     double Zk = 1/(2*lambda) * (collectionPotentiel[2/(i+1)][j][k].get_innerPotentiel().getDim1() - collectionPotentiel[2/(i-1)][j][k].get_innerPotentiel().getDim1());
 	
-	return {Xi, Yj, Zk};
+	array<double, 3> resultat ={Xi, Yj, Zk};
+	return resultat;
 }
 
 

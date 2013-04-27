@@ -1,9 +1,9 @@
 #include <iostream>
+#include "Dessinable.h"
 
 class Montagne : public Dessinable
 {
 private :
-
 double x0, y0, h, x, y;
 
 
