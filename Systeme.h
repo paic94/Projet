@@ -21,10 +21,11 @@ public:
 
 	Systeme();
 	Systeme(Montagne& , ChampPotentiel& );
-	void dessine ();
 	Systeme(Systeme const& autre)= delete;
-	Systeme operator =(Systeme const&)=delete;
-	ostream& operator<<( ostream& , Systeme const&);
+	Systeme operator =(Systeme const&) = delete;
+	void affiche ();
+	void  Dessine();
+
 
 
 
