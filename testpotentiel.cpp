@@ -1,10 +1,12 @@
 // ConsoleApplication3.cpp : définit le point d'entrée pour l'application console.
 //
 
+#include <iostream>
+
 #include "Montagne.h"
 #include "Champspotentiel.h"
 
-int main()
+int _tmain(int argc, _TCHAR* argv[])
 {
 	double a = 20/29;
 	Montagne M(15,15,0.4,15,15);
