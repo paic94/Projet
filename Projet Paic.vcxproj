@@ -77,6 +77,7 @@
     <ClCompile Include="Montagne.cc" />
     <ClCompile Include="Potentiel.cc" />
     <ClCompile Include="CubedAir.cpp" />
+    <ClCompile Include="Systeme.cc" />
     <ClCompile Include="TestMontagne.cc" />
     <ClCompile Include="testpotentiel.cpp" />
     <ClCompile Include="Vecteur2D.cc" />
@@ -88,6 +89,7 @@
     <ClInclude Include="Dessinable.h" />
     <ClInclude Include="Montagne.h" />
     <ClInclude Include="Potentiel.h" />
+    <ClInclude Include="Systeme.h" />
     <ClInclude Include="Vecteur2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

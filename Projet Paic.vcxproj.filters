@@ -42,6 +42,9 @@
     <ClCompile Include="Dessinable.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Systeme.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Montagne.h">
@@ -63,6 +66,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Dessinable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Systeme.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
