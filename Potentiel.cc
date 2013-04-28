@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Vecteur2D.cc"
-#include "Montagne.cc"
+#include "Vecteur2D.h"
+#include "Montagne.h"
 #include "Potentiel.h"
 using namespace std;
 

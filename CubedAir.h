@@ -9,10 +9,7 @@ using namespace std;
 class CubedAir
 {
 private:
-	const double Mairsec; 
-	Mairsec = 0.02896;
-	const double Gazparfait;
-	Gazparfait = 8.3144621;
+	
 	double TempsolINF;
 	//*température au sol
 	double pressairsolINF;
@@ -22,6 +19,8 @@ private:
 	double MMvapeau;
 
 public:
+	static double Mairsec; 
+	static double Gazparfait;
 	double get_TempsolINF() const;
 	double get_pressairsolINF() const;
 	double get_vitesseINF() const;
@@ -43,9 +42,6 @@ public:
 	//*pression partielle de la vapeur d'eau
 	double pressvapeausaturante();
 	bool   nuageoupas();
-
-
-
 }
 
 

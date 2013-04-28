@@ -144,7 +144,7 @@ void ChampPotentiel::affiche() {
     void ChampPotentiel::resolution (double seuilErreur , int limiteIterations , bool verbeuse = false)
     {
 		int nbIteration;
-        if (verbeuse = true)
+        if (verbeuse == true)
         {
             
             do

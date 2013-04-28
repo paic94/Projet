@@ -2,7 +2,10 @@
 #include <cmath>
 #include "CubedAir.h"
 
-using namespace std;
+;using namespace std;
+
+double CubedAir::Mairsec = 0.02896;
+double CubedAir::Gazparfait = 8.3144621;
 
 	double CubedAir::get_TempsolINF() const {return TempsolINF;}
 	double CubedAir::get_pressairsolINF() const {return pressairsolINF;}
