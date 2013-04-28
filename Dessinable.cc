@@ -2,7 +2,7 @@
 #include "Dessinable.h"
 using namespace std;
 
-ostream& operator<<(ostream& out, Dessinable objetDessinable)
+ostream& operator<<(ostream& out, Dessinable const &objetDessinable)
 {
     objetDessinable.dessine(out);
     return out;
@@ -10,7 +10,3 @@ ostream& operator<<(ostream& out, Dessinable objetDessinable)
 
 
 
-int main()
-{
-    return 0;
-}

@@ -11,9 +11,7 @@ double x0, y0, h, x, y;
 
 public :
 
-
-Montagne();
-Montagne(double, double, double, double, double);
+Montagne(double a0, double b0, double z, double a, double b) : x0(a0), y0(b0), h(z), x(a), y(b) {}
 double getH() const;
 double getY() const;
 double getX() const;
@@ -26,4 +24,4 @@ void controlevalue(double& a);
 
 
 };
-#endif PRJ_MONTAGNE
+#endif PRJ_MONTAGNE_H

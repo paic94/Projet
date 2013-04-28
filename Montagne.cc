@@ -5,7 +5,6 @@
 
 
 using namespace std;
-	Montagne::Montagne(double a0, double b0, double z, double a, double b) : x0(a0), y0(b0), h(z), x(a), y(b) {}
 	double Montagne::getH() const {return h;}
 	double Montagne::getX() const {return x;}
 	double Montagne::getY() const {return y;}
@@ -33,7 +32,7 @@ using namespace std;
 	}
 
 
-int main() {
+/*int main() {
 Montagne m(15,15,18,5,10);
 
 //partie tes du programme
@@ -52,4 +51,5 @@ test.open("montagne.dat");
 test.close();
 
 
-return 0;}
+return 0;
+}*/

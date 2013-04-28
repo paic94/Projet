@@ -40,15 +40,17 @@ class ChampPotentiel
     void set_coordonneeZ (double Z);
     void set_lambda (double l);
 
-
+	ChampPotentiel(int nbCubeX, int nbCubeY, int nbCubeZ, double lambda) : nbCubeX(nbCubeX), nbCubeY(nbCubeY), nbCubeZ(nbCubeZ), lambda(lambda) {}
 
     void coordonnee (int BaseX, int BaseY, int BaseZ, double pas);
+	
+
     void initialise(double v, Montagne M);
     void calcule_laplacien();
     void affiche();
 	double erreur() const;
     void iteration();
-    void resolution (double seuilErreur , int limiteIterations , bool verbeuse = false);
+    void resolution (double seuilErreur , int limiteIterations , bool);
     array<double,3> vitesse(int i, int j, int k);
 };
 
