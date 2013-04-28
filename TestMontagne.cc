@@ -2,9 +2,9 @@
 
 using namespace std;
 
-int main (){
+/*int main (){
 
-/* ofstream test;
+ ofstream test;
 test.open("montagne.dat");
 	for(int sx(1); sx<=29 ; sx++){
 		for(int sy(1); sy<= 29; sy++){
@@ -15,6 +15,7 @@ test.open("montagne.dat");
 		test << endl;
 		}
 test.close();
-*/
+
 
 return 0;}
+*/
