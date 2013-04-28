@@ -150,7 +150,7 @@ void ChampPotentiel::affiche() {
             do
             {
               iteration();
-              nbIteration = nbIteration + 1;
+              nbIteration ++;
 
               cout << nbIteration << ". ";
               affiche();

@@ -7,6 +7,8 @@ using namespace std;
 
 class Dessinable
 {
+private :
+
         public :
 
         virtual void dessine (ostream& out) const = 0; // dessine est une virtuelle pure pour la question 9.1

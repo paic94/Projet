@@ -10,7 +10,7 @@
 using namespace std;
 
 
-class ChampPotentiel : public Dessinable
+class ChampPotentiel
 {
     private :
 

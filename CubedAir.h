@@ -9,7 +9,7 @@ using namespace std;
 class CubedAir
 {
 private:
-	double Mairsec;
+	const double Mairsec; 
 	Mairsec = 0.02896;
 	const double Gazparfait;
 	Gazparfait = 8.3144621;

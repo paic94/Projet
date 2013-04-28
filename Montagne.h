@@ -1,3 +1,5 @@
+#ifndef PRJ_MONTAGNE_H
+#define PRJ_MONTAGNE_H
 #include <iostream>
 #include "Dessinable.h"
 
@@ -24,3 +26,4 @@ void controlevalue(double& a);
 
 
 };
+#endif PRJ_MONTAGNE
