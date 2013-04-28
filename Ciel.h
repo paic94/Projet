@@ -24,13 +24,5 @@ class Ciel
      public :
  void Ciel::coordonnee(double v, Champspotentiel C)
  void Ciel::initialise(nbCubeX,nbCubeY,nbCubeZ,lambda,double v)
-
-
-
-
 }
-
-
-
-
 #endif PRJ_CIEL_H
