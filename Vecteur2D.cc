@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include "stdafx.h"
 #include "Vecteur2D.h"
 
 
@@ -7,7 +8,7 @@ using namespace std;
 
 void Vecteur2D::affiche()
 {
-	cout <<dim1<<" "<<dim2<< endl;
+	cout <<"(" << dim1<<", "<<dim2<< ")";
 }
 
 bool Vecteur2D::compare(Vecteur2D x)

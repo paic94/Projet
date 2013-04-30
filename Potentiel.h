@@ -19,10 +19,10 @@ class Potentiel
         Potentiel() : laplacien() , innerPotentiel(){} // constructeur
 
 
-        Vecteur2D Potentiel::get_innerPotentiel () const ; // on se sert de ces methodes pour le calcul_laplacien
-        Vecteur2D Potentiel::get_laplacien () const ;
-        void Potentiel::set_laplacien (double x, double y)  ;
-        void Potentiel::set_potentiel (Vecteur2D laplacien, Vecteur2D potentiel);
+        Vecteur2D get_innerPotentiel () const ; // on se sert de ces methodes pour le calcul_laplacien
+        Vecteur2D get_laplacien () const ;
+        void set_laplacien (double x, double y)  ;
+        void set_potentiel (Vecteur2D laplacien, Vecteur2D potentiel);
 };
 
 
