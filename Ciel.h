@@ -3,11 +3,13 @@
 #include <iostream>
 #include <cmath>
 #include "CubedAir.h"
-using namespace std;
+#include<vector>
+#include "Champspotentiel.h"
+;using namespace std;
 
 class Ciel
 {
-	private :
+	protected :
     int nbCubeX;
     int nbCubeY;
     int nbCubeZ;
@@ -19,10 +21,18 @@ class Ciel
     double coordonneeX;
     double coordonneeY;
     double coordonneeZ;
-    double lambda; // pas
+    double lambda; // pas	
 
      public :
- void Ciel::coordonnee(double v, Champspotentiel C)
- void Ciel::initialise(nbCubeX,nbCubeY,nbCubeZ,lambda,double v)
+Ciel(ChampPotentiel const& C);
+
+Ciel(int,int,int,double,double );
+
+
+
 }
+
+
+
+
 #endif PRJ_CIEL_H
