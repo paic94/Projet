@@ -2,31 +2,45 @@
 #define PRJ_CUBEDAIR_H
 #include <iostream>
 #include <cmath>
-
+#include "constantes.h"
+#include<array>
+#include "ChampsPotentiel.h"
 
 using namespace std;
 
 class CubedAir
 {
-private:
+protected:
 	
 	double TempsolINF;
 	//*température au sol
 	double pressairsolINF;
 	//* pression de l'air au sol
+	array<double,3> vitesse;
 	double vitesseINF;
 	double tauxhumid;
-	double MMvapeau;
+	// la vitesse inf est la norme de la vitesse qui est un tableau de taille 3
+	
+	
+	double largeur;
+	double profondeur;
+	double hauteur;
 
 public:
-	static double Mairsec; 
-	static double Gazparfait;
+	
+	
+	
 	double get_TempsolINF() const;
 	double get_pressairsolINF() const;
 	double get_vitesseINF() const;
-	void set_TempsolINF(double);
+	void  set_vitesseINF(double) ;
+	array<double,3> set_vitesse(double,double,double);
 	void set_pressairsolINF(double);
-	void set_vitesseINF(double);
+	void set_tauxhumid(double);
+	void set_hauteur(double);
+	void set_largeur(double);
+	void set_profondeur(double);
+	void set_TempsolINF(double);
 	void dessine(ostream& out);
 
 

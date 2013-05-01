@@ -1,21 +1,23 @@
 #include <iostream>
 #include <cmath>
 #include "CubedAir.h"
-
+#include<vector>
 ;using namespace std;
 
-double CubedAir::Mairsec = 0.02896;
-double CubedAir::Gazparfait = 8.3144621;
 
 	double CubedAir::get_TempsolINF() const {return TempsolINF;}
 	double CubedAir::get_pressairsolINF() const {return pressairsolINF;}
 	double CubedAir::get_vitesseINF() const {return vitesseINF;}
-	void CubedAir::set_TempsolINF(double X)  {TempsolINF = X;}
+	array<double,3> CubedAir::set_vitesse(double X,double Y, double Z)  { array<double, 3> resultat ={X, Y, Z};
+	return  resultat;};
 	void CubedAir::set_pressairsolINF(double Y) {pressairsolINF = Y;}
-	void CubedAir::set_vitesseINF(double Z) { vitesseINF = Z ;}
+	void CubedAir::set_tauxhumid(double W) {tauxhumid = W;}
 	void CubedAir::dessine(ostream& out) {out << "Mairsec : " << Mairsec << ", constante gaz parfait : " << Gazparfait << ", Température au sol : " << TempsolINF << ", Pression de l'air au sol : " << pressairsolINF << ", Vitesse : " << vitesseINF << endl; }
-
-
+	void  CubedAir::set_vitesseINF(double d)  {vitesseINF = d;};
+	void  CubedAir::set_hauteur(double h)  {hauteur = h;};
+	void  CubedAir::set_largeur(double l)  {largeur = l;};
+	void  CubedAir::set_profondeur(double p)  {profondeur = p;};
+	void  CubedAir::set_TempsolINF(double e)  {TempsolINF = e;};
 	double CubedAir::entalpieparmassINF()
 	{
 	double h;
@@ -32,8 +34,9 @@ double CubedAir::Gazparfait = 8.3144621;
 	//* pb dans cette methode a regarder plus tard
 	double CubedAir::entalpieparmass()
 	{
+		return (constbernouilli()-g*hauteur-0.5*vitesseINF*vitesseINF) ;
 
-	return 2;
+	 ;
 
 	}
 
