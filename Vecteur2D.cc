@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cmath>
-#include "stdafx.h"
+
 #include "Vecteur2D.h"
 
 

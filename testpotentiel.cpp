@@ -6,7 +6,7 @@
 #include "Montagne.h"
 #include "Champspotentiel.h"
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
 	double a = 20/29;
 	Montagne M(15,15,0.4,15,15);

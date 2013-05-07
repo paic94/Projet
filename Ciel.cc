@@ -8,11 +8,11 @@
 
  Ciel :: Ciel( ChampPotentiel const& C)
  {
-nbCubeX=C.get_nbCubeX();
+nbCubeX=C.get_nbCubeX ();
 
-nbCubeY=C.get_nbCubeX ();
+nbCubeY=C.get_nbCubeY ();
 
-nbCubeZ=C.get_nbCubeX ();
+nbCubeZ=C.get_nbCubeZ ();
 
  vector<CubedAir> vect_inter(nbCubeZ);
 

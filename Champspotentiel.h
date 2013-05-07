@@ -10,7 +10,7 @@
 using namespace std;
 
 
-class ChampPotentiel
+class ChampPotentiel :public Dessinable
 {
     private :
 
@@ -34,6 +34,9 @@ class ChampPotentiel
     double get_coordonneeX () const;  // on se sert de ces methodes pour le calcul_laplacien
     double get_coordonneeY () const;
     double get_coordonneeZ () const;
+	 double get_nbCubeX () const;  // on se sert de ces methodes pour le calcul_laplacien
+    double get_nbCubeY () const;
+    double get_nbCubeZ () const;
     double get_lambda () const;
     void set_coordonneeX (double X);
     void set_coordonneeY (double Y);
@@ -52,6 +55,7 @@ class ChampPotentiel
     void iteration();
     void resolution (double seuilErreur , int limiteIterations , bool);
     array<double,3> vitesse(int i, int j, int k);
+	void dessine();
 };
 
 

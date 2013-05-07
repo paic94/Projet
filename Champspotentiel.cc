@@ -13,6 +13,9 @@ using namespace std;
     double ChampPotentiel::get_coordonneeX () const {return coordonneeX;} // on se sert de ces methodes pour le calcul_laplacien
     double ChampPotentiel::get_coordonneeY () const {return coordonneeY;}
     double ChampPotentiel::get_coordonneeZ () const {return coordonneeZ;}
+	 double ChampPotentiel::get_nbCubeX () const {return nbCubeX;} // on se sert de ces methodes pour le calcul_laplacien
+    double ChampPotentiel::get_nbCubeY () const {return nbCubeY;}
+    double ChampPotentiel::get_nbCubeZ () const {return nbCubeZ;}
     double ChampPotentiel::get_lambda () const {return lambda;}
     void ChampPotentiel::set_coordonneeX (double X)  {coordonneeX = X;}
     void ChampPotentiel::set_coordonneeY (double Y)  {coordonneeY = Y;}
@@ -183,3 +186,10 @@ array<double,3> ChampPotentiel::vitesse(int i, int j, int k)
 }
 
 
+void ChampPotentiel:: dessine()
+	
+{
+	affiche();
+
+
+};

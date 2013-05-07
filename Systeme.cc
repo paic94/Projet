@@ -3,16 +3,7 @@
 
 using namespace std;
 
-int main()
-{
 
-
-
-
-
-	return 0;
-
-};
 
 void Systeme :: affiche()
 {
@@ -37,7 +28,7 @@ void  Systeme :: Dessine()
 	for (unsigned int i(0) ; i<Collection_Dessins.size() ; i++)
 	{
 
-		Collection_Dessins[i]*->dessine();
+		Collection_Dessins[i]->dessine(cout);
 
 
 

@@ -1,0 +1,2 @@
+﻿1>------ Début de la génération : Projet : Projet Paic, Configuration : Debug Win32 ------
+1>  testpotentiel.cpp

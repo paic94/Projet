@@ -19,10 +19,16 @@ private :
 
 public:
 
-	Systeme();
-	Systeme(Montagne& , ChampPotentiel& );
-	Systeme(Systeme const& autre)= delete;
-	Systeme operator =(Systeme const&) = delete;
+	Systeme(){}
+	Systeme(Montagne& m , ChampPotentiel& c )
+	{
+		Collection_Dessins.push_back(new Montagne(m));
+	    Collection_Dessins.push_back(new ChampPotentiel(c));
+	
+	
+	}
+	Systeme(Systeme const& ) {}
+	Systeme& operator =(Systeme const&) {}
 	void affiche ();
 	void  Dessine();
 
